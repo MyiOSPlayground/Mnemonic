@@ -17,6 +17,8 @@
 		78E227CB27F335E1004D956E /* MnemonicModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CA27F335E1004D956E /* MnemonicModule.swift */; };
 		78E227CE27F33B67004D956E /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CD27F33B67004D956E /* DataExtension.swift */; };
 		78E227D027F33DDF004D956E /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CF27F33DDF004D956E /* Words.swift */; };
+		78E227D227F3410E004D956E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227D127F3410E004D956E /* StringExtension.swift */; };
+		78E227D427F341BB004D956E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227D327F341BB004D956E /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		78E227CA27F335E1004D956E /* MnemonicModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicModule.swift; sourceTree = "<group>"; };
 		78E227CD27F33B67004D956E /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		78E227CF27F33DDF004D956E /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		78E227D127F3410E004D956E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		78E227D327F341BB004D956E /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		B161308C74B8FFEF25360377 /* Pods-MnemonicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicSample.debug.xcconfig"; path = "Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				78E227CD27F33B67004D956E /* DataExtension.swift */,
+				78E227D127F3410E004D956E /* StringExtension.swift */,
+				78E227D327F341BB004D956E /* ArrayExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -224,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7882336827F3302700686C03 /* ViewController.swift in Sources */,
+				78E227D227F3410E004D956E /* StringExtension.swift in Sources */,
 				7882336427F3302700686C03 /* AppDelegate.swift in Sources */,
+				78E227D427F341BB004D956E /* ArrayExtension.swift in Sources */,
 				7882336627F3302700686C03 /* SceneDelegate.swift in Sources */,
 				78E227D027F33DDF004D956E /* Words.swift in Sources */,
 				78E227CB27F335E1004D956E /* MnemonicModule.swift in Sources */,

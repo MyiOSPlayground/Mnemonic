@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         let test = MnemonicModule()
         let some = test.genMnemonics(.bits128)
         print("some : \(some)")
+        let entropy = test.mnemonicsToEntropy(some!)
+        print("entropy: \(entropy?.toHexString())")
     }
 
 

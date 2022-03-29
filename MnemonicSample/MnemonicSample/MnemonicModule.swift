@@ -41,6 +41,7 @@ class MnemonicModule: NSObject {
     
     func genMnemonics(_ bitsOfEntropy: BitOfEntropy) -> [String]? {
         guard let entropy = Data.randomBytes(length: bitsOfEntropy.rawValue/8) else { return nil }
+        print("gen entropy: \(entropy.toHexString())")
         return genMnemonicsFromEntropy(entropy: entropy)
     }
     
@@ -61,6 +62,32 @@ class MnemonicModule: NSObject {
         }
         
         return returnValue
+    }
+    
+    func mnemonicsToEntropy(_ mnemonics: [String]) -> Data? {
+        guard mnemonics.count >= 12 && mnemonics.count.isMultiple(of: 3) && mnemonics.count <= 24 else { return nil }
+        var bitString = ""
+        for mnemonic in mnemonics {
+            guard let idx = Words.englishWords.firstIndex(of: mnemonic) else { return nil }
+            let idxAsInt = Words.englishWords.startIndex.distance(to: idx)
+            let stringForm = String(UInt16(idxAsInt), radix: 2).leftPadding(toLength: 11, withPad: "0")
+            bitString.append(stringForm)
+        }
+        
+        let stringCount = bitString.count
+        if !stringCount.isMultiple(of: 33) {
+            return nil
+        }
+        let entropyBits = bitString[0 ..< (bitString.count - bitString.count/33)]
+        let checksumBits = bitString[(bitString.count - bitString.count/33) ..< bitString.count]
+        guard let entropy = entropyBits.interpretAsBinaryData() else {
+            return nil
+        }
+        let checksum = String(entropy.sha256().bitsInRange(0, checksumBits.count)!, radix: 2).leftPadding(toLength: checksumBits.count, withPad: "0")
+        if checksum != checksumBits {
+            return nil
+        }
+        return entropy
     }
     
 }
