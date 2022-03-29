@@ -5,6 +5,8 @@
 //  Created by hanwe on 2022/03/29.
 //
 
+//http://wiki.hash.kr/index.php/BIP39
+
 import UIKit
 
 class ViewController: UIViewController {

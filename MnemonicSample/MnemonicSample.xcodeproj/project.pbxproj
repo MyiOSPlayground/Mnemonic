@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F798CACC998B5530F044E1 /* Pods_MnemonicSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378CC928DE288AFE0F40CEC /* Pods_MnemonicSample.framework */; };
 		7882336427F3302700686C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882336327F3302700686C03 /* AppDelegate.swift */; };
 		7882336627F3302700686C03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882336527F3302700686C03 /* SceneDelegate.swift */; };
 		7882336827F3302700686C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882336727F3302700686C03 /* ViewController.swift */; };
 		7882336B27F3302700686C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7882336927F3302700686C03 /* Main.storyboard */; };
 		7882336D27F3302C00686C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7882336C27F3302C00686C03 /* Assets.xcassets */; };
 		7882337027F3302C00686C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7882336E27F3302C00686C03 /* LaunchScreen.storyboard */; };
+		78E227CB27F335E1004D956E /* MnemonicModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CA27F335E1004D956E /* MnemonicModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2378CC928DE288AFE0F40CEC /* Pods_MnemonicSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MnemonicSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F6D1F2FC6D7544B2547923 /* Pods-MnemonicSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicSample.release.xcconfig"; path = "Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample.release.xcconfig"; sourceTree = "<group>"; };
 		7882336027F3302700686C03 /* MnemonicSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MnemonicSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7882336327F3302700686C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7882336527F3302700686C03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		7882336C27F3302C00686C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7882336F27F3302C00686C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7882337127F3302C00686C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E227CA27F335E1004D956E /* MnemonicModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicModule.swift; sourceTree = "<group>"; };
+		B161308C74B8FFEF25360377 /* Pods-MnemonicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicSample.debug.xcconfig"; path = "Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F798CACC998B5530F044E1 /* Pods_MnemonicSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434741E889D65B3F37460A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2378CC928DE288AFE0F40CEC /* Pods_MnemonicSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66545CE971553851BC1ECC5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B161308C74B8FFEF25360377 /* Pods-MnemonicSample.debug.xcconfig */,
+				54F6D1F2FC6D7544B2547923 /* Pods-MnemonicSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7882335727F3302700686C03 = {
 			isa = PBXGroup;
 			children = (
 				7882336227F3302700686C03 /* MnemonicSample */,
 				7882336127F3302700686C03 /* Products */,
+				66545CE971553851BC1ECC5A /* Pods */,
+				434741E889D65B3F37460A78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 				7882336C27F3302C00686C03 /* Assets.xcassets */,
 				7882336E27F3302C00686C03 /* LaunchScreen.storyboard */,
 				7882337127F3302C00686C03 /* Info.plist */,
+				78E227CA27F335E1004D956E /* MnemonicModule.swift */,
 			);
 			path = MnemonicSample;
 			sourceTree = "<group>";
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7882337427F3302C00686C03 /* Build configuration list for PBXNativeTarget "MnemonicSample" */;
 			buildPhases = (
+				B9181A71ED44D2827AA5894B /* [CP] Check Pods Manifest.lock */,
 				7882335C27F3302700686C03 /* Sources */,
 				7882335D27F3302700686C03 /* Frameworks */,
 				7882335E27F3302700686C03 /* Resources */,
+				3A73ECF2D8F008F587B388C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A73ECF2D8F008F587B388C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9181A71ED44D2827AA5894B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MnemonicSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7882335C27F3302700686C03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				7882336827F3302700686C03 /* ViewController.swift in Sources */,
 				7882336427F3302700686C03 /* AppDelegate.swift in Sources */,
 				7882336627F3302700686C03 /* SceneDelegate.swift in Sources */,
+				78E227CB27F335E1004D956E /* MnemonicModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +355,7 @@
 		};
 		7882337527F3302C00686C03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B161308C74B8FFEF25360377 /* Pods-MnemonicSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +384,7 @@
 		};
 		7882337627F3302C00686C03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F6D1F2FC6D7544B2547923 /* Pods-MnemonicSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
