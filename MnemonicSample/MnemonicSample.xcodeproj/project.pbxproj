@@ -15,6 +15,8 @@
 		7882336D27F3302C00686C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7882336C27F3302C00686C03 /* Assets.xcassets */; };
 		7882337027F3302C00686C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7882336E27F3302C00686C03 /* LaunchScreen.storyboard */; };
 		78E227CB27F335E1004D956E /* MnemonicModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CA27F335E1004D956E /* MnemonicModule.swift */; };
+		78E227CE27F33B67004D956E /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CD27F33B67004D956E /* DataExtension.swift */; };
+		78E227D027F33DDF004D956E /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E227CF27F33DDF004D956E /* Words.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		7882336F27F3302C00686C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7882337127F3302C00686C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78E227CA27F335E1004D956E /* MnemonicModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicModule.swift; sourceTree = "<group>"; };
+		78E227CD27F33B67004D956E /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		78E227CF27F33DDF004D956E /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		B161308C74B8FFEF25360377 /* Pods-MnemonicSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MnemonicSample.debug.xcconfig"; path = "Target Support Files/Pods-MnemonicSample/Pods-MnemonicSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +62,6 @@
 				B161308C74B8FFEF25360377 /* Pods-MnemonicSample.debug.xcconfig */,
 				54F6D1F2FC6D7544B2547923 /* Pods-MnemonicSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +86,7 @@
 		7882336227F3302700686C03 /* MnemonicSample */ = {
 			isa = PBXGroup;
 			children = (
+				78E227CC27F33B5F004D956E /* Extension */,
 				7882336327F3302700686C03 /* AppDelegate.swift */,
 				7882336527F3302700686C03 /* SceneDelegate.swift */,
 				7882336727F3302700686C03 /* ViewController.swift */,
@@ -91,8 +95,17 @@
 				7882336E27F3302C00686C03 /* LaunchScreen.storyboard */,
 				7882337127F3302C00686C03 /* Info.plist */,
 				78E227CA27F335E1004D956E /* MnemonicModule.swift */,
+				78E227CF27F33DDF004D956E /* Words.swift */,
 			);
 			path = MnemonicSample;
+			sourceTree = "<group>";
+		};
+		78E227CC27F33B5F004D956E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				78E227CD27F33B67004D956E /* DataExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +226,9 @@
 				7882336827F3302700686C03 /* ViewController.swift in Sources */,
 				7882336427F3302700686C03 /* AppDelegate.swift in Sources */,
 				7882336627F3302700686C03 /* SceneDelegate.swift in Sources */,
+				78E227D027F33DDF004D956E /* Words.swift in Sources */,
 				78E227CB27F335E1004D956E /* MnemonicModule.swift in Sources */,
+				78E227CE27F33B67004D956E /* DataExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
