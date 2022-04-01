@@ -48,9 +48,10 @@ class MnemonicModule: NSObject {
     func genMnemonicsFromEntropy(entropy: Data) -> [String]? {
         let checksum = entropy.sha256()
         let checksumBits = entropy.count*8/32
+        let checksumData = checksum[0 ..< (checksumBits + 7)/8 ]
         var fullEntropy = Data()
         fullEntropy.append(entropy)
-        fullEntropy.append(checksum[0 ..< (checksumBits + 7)/8 ])
+        fullEntropy.append(checksumData)
         
         var returnValue = [String]()
         for i in 0 ..< fullEntropy.count*8/11 {
